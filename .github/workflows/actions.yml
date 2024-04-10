@@ -31,6 +31,9 @@ jobs:
     - name: List files in the repository
       run: |
         ls '~/.nuget/packages'
+        
+    - name: Install vpk
+      run:  dotnet tool install -g vpk
 
     - name: Build
       run: dotnet build VeloTest.sln  --no-restore
@@ -41,6 +44,12 @@ jobs:
     - name: Publish
       run: | 
         dotnet publish VeloTest.sln -c Release --no-restore  -o publish 
+
+
+    - name: Sign Package
+      run: |
+          vpk pack --packId MyAppId -packVersion 1.0.0 --packDir publish --mainExe VeloTest.exe
+    
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
