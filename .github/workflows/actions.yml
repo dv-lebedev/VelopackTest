@@ -43,7 +43,7 @@ jobs:
       
     - name: Publish
       run: | 
-        dotnet publish VeloTest.sln -c Release --no-restore  -o publish 
+        dotnet publish VeloTest.sln -c Release --no-restore -r win-x64  -o publish 
 
 
     - name: Sign Package
