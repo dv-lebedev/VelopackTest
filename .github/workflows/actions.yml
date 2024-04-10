@@ -48,7 +48,7 @@ jobs:
 
     - name: Sign Package
       run: |
-          vpk pack --packId MyAppId -packVersion 1.0.0 --packDir publish --mainExe VeloTest.exe
+          vpk pack -u VeloTest -v 1.0.0 -p .\Publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors "MeAndMe"
     
 
     - name: Upload a Build Artifact
