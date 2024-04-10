@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Velopack" Version="0.0.462-gf8acc97" />
+    <PackageReference Include="Velopack" Version="0.0.340" />
   </ItemGroup>
 
 </Project>
