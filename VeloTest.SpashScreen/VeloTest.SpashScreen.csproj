@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Splash screen 1x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Splash screen 1x.png" />
+  </ItemGroup>
+
 </Project>
