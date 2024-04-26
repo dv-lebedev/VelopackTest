@@ -12,5 +12,9 @@
   <ItemGroup>
     <PackageReference Include="Velopack" Version="0.0.340" />
   </ItemGroup>
+  
+  <Target Name="vpk">
+    <Exec Command="vpk pack -u VeloTestApp -v 1.0.0 -p publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors $quote;MeAndMe$quote; --splashImage=$quote;VeloTest.SpashScreen/Splash screen 1x.png$quote;" />
+  </Target>
 
 </Project>
