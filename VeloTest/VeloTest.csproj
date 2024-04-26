@@ -14,7 +14,7 @@
   </ItemGroup>
   
   <Target Name="vpk">
-    <Exec Command="vpk pack -u VeloTestApp -v 1.0.0 -p publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors $quote;MeAndMe$quote; --splashImage=$quote;VeloTest.SpashScreen/Splash screen 1x.png$quote;" />
+    <Exec Command="vpk pack -u VeloTestApp -v 1.0.0 -p publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors $quote;MeAndMe$quote; --splashImage=$quote;VeloTest.SpashScreen/Splash_screen_1x.png$quote;" />
   </Target>
 
 </Project>
