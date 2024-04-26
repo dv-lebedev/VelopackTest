@@ -48,7 +48,7 @@ jobs:
 
     - name: Sign Package
       run: |
-          vpk pack -u VeloTestApp -v 1.0.0 -p publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors "MeAndMe" --splashImage "VeloTest.SpashScreen/Splash screen 1x.png"
+          vpk pack -u VeloTestApp -v 1.0.0 -p publish -e VeloTest.exe --skipVeloAppCheck --packTitle VeloTest --packAuthors "MeAndMe" /p:SplashImage="VeloTest.SpashScreen/Splash screen 1x.png"
     
 
     - name: Upload a Build Artifact
