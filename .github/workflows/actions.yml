@@ -48,7 +48,7 @@ jobs:
 
     - name: Sign Package
       run: |
-          msbuild -t:vpk
+          dotnet build -t:vpk
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
